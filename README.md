@@ -1,19 +1,49 @@
-A collection of LeetCode questions to ace the coding interview! - Created using [LeetHub v2](https://github.com/arunbhardwaj/LeetHub-2.0)
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Array
-|  |
-| ------- |
-| [0560-subarray-sum-equals-k](https://github.com/Raji-11/coding-solutions/tree/master/0560-subarray-sum-equals-k) |
-| [0974-subarray-sums-divisible-by-k](https://github.com/Raji-11/coding-solutions/tree/master/0974-subarray-sums-divisible-by-k) |
-## Hash Table
-|  |
-| ------- |
-| [0560-subarray-sum-equals-k](https://github.com/Raji-11/coding-solutions/tree/master/0560-subarray-sum-equals-k) |
-| [0974-subarray-sums-divisible-by-k](https://github.com/Raji-11/coding-solutions/tree/master/0974-subarray-sums-divisible-by-k) |
-## Prefix Sum
-|  |
-| ------- |
-| [0560-subarray-sum-equals-k](https://github.com/Raji-11/coding-solutions/tree/master/0560-subarray-sum-equals-k) |
-| [0974-subarray-sums-divisible-by-k](https://github.com/Raji-11/coding-solutions/tree/master/0974-subarray-sums-divisible-by-k) |
-<!---LeetCode Topics End-->
+<div align="center">
+
+# 🧠 Coding Solutions
+
+![Total Solved](https://img.shields.io/badge/Total_Solved-1-blue?style=for-the-badge)
+![Streak](https://img.shields.io/badge/Streak-1_days-orange?style=for-the-badge)
+![Last Synced](https://img.shields.io/badge/Last_Synced-20--8--2026-green?style=for-the-badge)
+
+> 🚀 Auto-synced by [**PushMyCode**](https://github.com/PushMyCode-HQ) — solve it, forget it, it's on GitHub.
+
+</div>
+
+---
+
+## 📊 Stats
+
+| Difficulty | Solved |
+|:---:|:---:|
+| 🟢 Easy | **1** |
+| 🟡 Medium | **0** |
+| 🔴 Hard | **0** |
+| **Total** | **1** |
+
+## 🛠️ Languages
+
+| Language | Solutions |
+|:---:|:---:|
+| Java | **1** |
+
+## 📂 Repository Structure
+
+```
+📦 coding-solutions/
+├── leetcode/
+│   ├── easy/
+│   ├── medium/
+│   └── hard/
+├── hackerrank/
+├── codechef/
+└── gfg/
+```
+
+---
+
+<div align="center">
+
+*Last updated: 2026-08-20* · Powered by [**PushMyCode**](https://github.com/PushMyCode-HQ)
+
+</div>
