@@ -1,0 +1,24 @@
+// Solution as follows
+
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int t, a, b;
+    scanf("%d", &t);
+    for (int i = 0; i < t; i++) {
+        scanf("%d %d", &a, &b);
+        // inside ceil division was to be done not multiplication
+        printf("%d\n", (int)ceil(a/5.0) - (int)ceil(b/5.0));
+    }
+    return 0;
+}
+/* Explanation:
+
+(int)ceil(n/5.0): Calculates the expected joining day for candidate.
+
+(int)ceil(k/5.0): Calculates the expected joining day for candidate k.
+
+The difference between the expected joining day and the actual joining day after adjustment gives the number of candidates 
+   who will join on a different day than expected.
+*/
