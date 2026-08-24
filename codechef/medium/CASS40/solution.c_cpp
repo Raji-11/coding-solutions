@@ -6,16 +6,15 @@ int main() {
     scanf("%d", &t);
 
     while (t--) {
-        int n;
-        scanf("%d", &n);
-        int arr[n];
+        char str[1002];
+        scanf("%s", str);
         int sum = 0; 
-        for (int i = 0; i < n; i++) {
-           scanf("%d", &arr[i]);
-           if(arr[i] % 3 == 0)
-             sum += arr[i];
+        for (int i = 0; str[i] != '\0'; i++) {
+            char ch = str[i];
+            if (ch >= '0' && ch <= '9') {
+                sum += str[i] - '0'; // Convert character to integer and add to sum
+            }
         }
-        
         printf("%d\n", sum);
     }
 
