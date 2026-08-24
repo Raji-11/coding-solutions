@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+// Function to find the maximum and minimum of three integers
+void findMaxMin(int *a, int *b, int *c, int *max, int *min) {
+    *max = *a;
+    *min = *a;
+    // Update the code below to solve the problem
+    
+    if(*min>*b){
+        *min=*b;
+    }
+    if(*min>*c){
+        *min=*c;
+    }
+    if(*max<*b){
+        *max=*b;
+    }
+    if(*max<*c){
+        *max=*c;
+    }
+
+    
+}
+
+int main() {
+    int num1, num2, num3;
+    int max, min;
+
+    // Read three integer values from the user
+    scanf("%d %d %d", &num1, &num2, &num3);
+
+    // Call the function to find the maximum and minimum
+    findMaxMin(&num1, &num2, &num3, &max, &min);
+
+    // Print the maximum and minimum values
+    printf("%d\n", min);
+    printf("%d\n", max);
+
+    return 0;
+}
