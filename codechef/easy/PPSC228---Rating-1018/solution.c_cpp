@@ -1,0 +1,52 @@
+#include <stdio.h>
+#include <string.h>
+
+struct Book {
+    char name[100];
+    int totalCount;
+};
+
+int main() {
+    int T;
+    scanf("%d", &T);
+
+    struct Book books[T];
+    int numBooks = 0; // Number of unique books in the array
+
+    for (int i = 0; i < T; i++) {
+        char bookName[100];
+        scanf(" %s", bookName);
+
+        int bookIndex = -1; // Index of the book in the array, -1 if not found
+        for (int j = 0; j < numBooks; j++) {
+            if (strcmp(bookName, books[j].name) == 0) {
+                bookIndex = j;
+                break;
+            }
+        }
+
+        if (bookIndex == -1) {
+            strcpy(books[numBooks].name, bookName);
+            int numOrders, totalQuantity = 0;
+            scanf("%d", &numOrders);
+            int quantity;
+            scanf("%d", &quantity);
+            totalQuantity += quantity;
+            books[numBooks].totalCount = totalQuantity;
+            numBooks++;
+        } else {
+            int numOrders, totalQuantity = 0;
+            scanf("%d", &numOrders);
+            int quantity;
+            scanf("%d", &quantity);
+            books[bookIndex].totalCount += quantity;
+            }
+        }
+
+    // Output book names and counts
+    for (int i = 0; i < numBooks; i++) {
+        printf("%s %d\n", books[i].name, books[i].totalCount);
+    }
+
+    return 0;
+}
