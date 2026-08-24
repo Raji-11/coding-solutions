@@ -2,7 +2,7 @@
 
 // Function to find maximum  element in an array using pointers
 void findMax(int arr[], int size, int *max) {
-   // Complete the function
+   // Complete the function 
    *max=arr[0];
    for(int i=1;i<size;i++){
        if(*max<arr[i]){
