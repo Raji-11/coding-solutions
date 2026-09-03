@@ -52,44 +52,35 @@ Explanation: The only possible triplet sums up to 0.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 34 ms (beats 59.86%)  
-**Memory:** 59.2 MB (beats 59.83%)  
-**Submitted:** 2026-08-25T07:01:39.398Z  
+**Runtime:** 897 ms (beats 6.84%)  
+**Memory:** 59.8 MB (beats 17.75%)  
+**Submitted:** 2026-09-03T16:10:40.662Z  
 
 ```java
-import java.util.*;
-
 class Solution {
     public List<List<Integer>> threeSum(int[] nums) {
+        Set<List<Integer>> hs=new HashSet<>();
+        int n=nums.length;
         Arrays.sort(nums);
-        List<List<Integer>> ll = new ArrayList<>();
-
-        for (int i = 0; i < nums.length - 2; i++) {
-            if (i > 0 && nums[i] == nums[i - 1]) continue;
-
-            int left = i + 1, right = nums.length - 1;
-            while (left < right) {
-                int sum = nums[i] + nums[left] + nums[right];
-
-                if (sum == 0) {
-                    ll.add(Arrays.asList(nums[i], nums[left], nums[right]));
+        for(int i=0;i<n;i++){
+            int left=i+1;
+            int right=n-1;
+            while(left<right){
+                int sum=nums[i]+nums[left]+nums[right];
+                if(sum==0){
+                    hs.add(Arrays.asList(nums[i],nums[left],nums[right]));
                     left++;
                     right--;
-
-                    while (left < right && nums[left] == nums[left - 1]) left++;
-                    while (left < right && nums[right] == nums[right + 1]) right--;
-
-                } else if (sum < 0) {
+                }else if(sum<0){
                     left++;
-                } else {
+                }else{
                     right--;
                 }
             }
         }
-        return ll;
+        return new ArrayList<>(hs);
     }
 }
-
 ```
 
 ---
