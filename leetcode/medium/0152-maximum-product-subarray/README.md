@@ -42,8 +42,8 @@ Explanation: The result cannot be 2, because [-2,-1] is not a subarray.
 
 **Language:** Java  
 **Runtime:** 1 ms (beats 93.16%)  
-**Memory:** 47.1 MB (beats 73.25%)  
-**Submitted:** 2026-09-03T16:12:35.081Z  
+**Memory:** 47.6 MB (beats 15.81%)  
+**Submitted:** 2026-09-03T16:14:02.366Z  
 
 ```java
 class Solution {
