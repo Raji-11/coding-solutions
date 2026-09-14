@@ -1,4 +1,4 @@
-# Employees Earning More Than Their Managers
+# Q2. Employees Earning More Than Their Managers
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Easy-green)
 
@@ -56,9 +56,9 @@ Explanation: Joe is the only employee who earns more than his manager.
 ## Solution
 
 **Language:** SQL  
-**Runtime:** 428 ms (beats 44.80%)  
+**Runtime:** 408 ms (beats 64.76%)  
 **Memory:** 0B (beats 100.00%)  
-**Submitted:** 2026-08-23T08:57:18.220Z  
+**Submitted:** 2026-09-14T18:16:22.337Z  
 
 ```sql
 # Write your MySQL query statement below
