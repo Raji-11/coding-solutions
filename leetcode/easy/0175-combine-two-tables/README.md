@@ -1,4 +1,4 @@
-# Combine Two Tables
+# Q1. Combine Two Tables
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Easy-green)
 
@@ -81,19 +81,13 @@ addressId = 1 contains information about the address of personId = 2.
 ## Solution
 
 **Language:** SQL  
-**Runtime:** 489 ms (beats 30.91%)  
+**Runtime:** 534 ms (beats 20.19%)  
 **Memory:** 0B (beats 100.00%)  
-**Submitted:** 2026-08-23T08:23:53.918Z  
+**Submitted:** 2026-09-14T18:10:17.720Z  
 
 ```sql
 # Write your MySQL query statement below
-SELECT  p.firstname, p.lastname, A.city, A.state 
-FROM Person p 
-LEFT JOIN Address A 
-ON p.personId=A.personId;
-
-
-
+select p.firstname,p.lastname,A.city,A.state from Person p LEFT JOIN Address A on p.personId=A.personId;
 ```
 
 ---
