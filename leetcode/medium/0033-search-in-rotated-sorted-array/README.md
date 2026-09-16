@@ -52,16 +52,31 @@ Output: -1
 
 **Language:** Java  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 43.8 MB (beats 47.18%)  
-**Submitted:** 2026-09-03T16:10:53.246Z  
+**Memory:** 43.9 MB (beats 28.23%)  
+**Submitted:** 2026-09-16T17:50:12.266Z  
 
 ```java
 class Solution {
     public int search(int[] nums, int target) {
         int n=nums.length;
-        for(int i=0;i<n;i++){
-            if(nums[i]==target){
-               return i;
+        int l=0,h=n-1;
+        while(l<=h){
+            int m=l+(h-l)/2;
+            if(nums[m]==target){
+                return m;
+            }else if(nums[l]<=nums[m]){
+                if(nums[l]<=target&&target<nums[m]){
+                    h=m-1;
+                }else{
+                    l=m+1;
+                }
+
+            }else{
+                if(nums[m]<target&&target<=nums[h]){
+                    l=m+1;
+                }else{
+                    h=m-1;
+                }
             }
         }
         return -1;
