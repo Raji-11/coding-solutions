@@ -42,7 +42,7 @@ Explanation: 2 does not exist in nums so return -1
 **Language:** Java  
 **Runtime:** 0 ms (beats 100.00%)  
 **Memory:** 48.5 MB (beats 13.94%)  
-**Submitted:** 2026-09-16T17:45:31.871Z  
+**Submitted:** 2026-09-16T17:49:14.051Z  
 
 ```java
 class Solution {
