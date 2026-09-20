@@ -40,9 +40,9 @@ Total amount you can rob = 2 + 9 + 1 = 12.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 42.5 MB  
-**Submitted:** 2026-09-20T13:58:20.036Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 42.8 MB (beats 56.77%)  
+**Submitted:** 2026-09-20T13:58:26.533Z  
 
 ```java
 class Solution {
