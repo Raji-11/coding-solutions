@@ -66,7 +66,7 @@ Chef can work on minutes $1, 2, 4, 5, 7$ to put up the net; so the answer is $7$
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-23T15:32:56.836Z  
+**Submitted:** 2026-09-23T15:35:59.631Z  
 
 ```java
 import java.util.*;
@@ -83,9 +83,19 @@ class Codechef
 		while(t-->0){
 		    int n=sc.nextInt();
 		    int k=sc.nextInt();
-		    if(n<k) return n;
-		    if(n==k) return n+1;
 		    
+		    int time = 0;
+            int work = 0;
+
+            while (work < n) {
+                time++;
+
+                if (time % k != 0) {
+                    work++;
+                }
+            }
+
+            System.out.println(time);
 		}
 
 	}
