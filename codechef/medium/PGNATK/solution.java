@@ -12,9 +12,19 @@ class Codechef
 		while(t-->0){
 		    int n=sc.nextInt();
 		    int k=sc.nextInt();
-		    if(n<k) return n;
-		    if(n==k) return n+1;
 		    
+		    int time = 0;
+            int work = 0;
+
+            while (work < n) {
+                time++;
+
+                if (time % k != 0) {
+                    work++;
+                }
+            }
+
+            System.out.println(time);
 		}
 
 	}
